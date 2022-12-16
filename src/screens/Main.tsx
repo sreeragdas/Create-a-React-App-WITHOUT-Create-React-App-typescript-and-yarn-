@@ -1,4 +1,4 @@
-import './stylescss';
+import './style.css';
 export const Main: React.FC = () => {
 
   return (
