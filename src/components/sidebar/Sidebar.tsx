@@ -28,26 +28,29 @@ export const Sidebar: React.FC = () => {
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
-    
+       
           to="/"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink 
-  
+ 
+          className="about-link"
           to="/about"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
         <NavLink
-    
+
+          className="portfolio-link"
           to="/portfolio"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         <NavLink
-      
+        
+          className="contact-link"
           to="/contact"
           onClick={() => setShowNav(false)}
         >
@@ -60,6 +63,21 @@ export const Sidebar: React.FC = () => {
           size="3x"
           className='close-icon' />
       </nav>
+      <ul>
+          <li>
+              <a rel='noreferral' href="https://www.linkedin.com/in/sreerag-haridas-em-a5989516a">
+              <FontAwesomeIcon icon={faLinkedin} color="#4d4d4d4" />
+              </a>
+          </li>
+          <li>
+              <a rel='noreferral' href="https://github.com/sreeragdas">
+              <FontAwesomeIcon icon={faGithub} color="#4d4d4d4" />
+              </a>
+          </li>
+     /
+   
+
+      </ul>
     </div>
   )
 }
