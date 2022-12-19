@@ -4,14 +4,15 @@ import { Sidebar } from '../sidebar/Sidebar'
 export const Layout: React.FC = () => {
   return (
     <div className="App">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="page">
-        <span className="tag top-tag">&lt;body&gt</span>
+        <span className="tags top-tags">&lt;body&gt;</span>
 
         <Outlet />
-        <span className="tag top-tag">&lt;body&gt
-        <br/>
-        <span className="bottam-tag-html">&lt;body&gt</span>
+        <span className="tags bottom-tags">
+          &lt;/body&gt;
+          <br />
+          <span className="bottom-tag-html">&lt;/html&gt;</span>
         </span>
       </div>
     </div>

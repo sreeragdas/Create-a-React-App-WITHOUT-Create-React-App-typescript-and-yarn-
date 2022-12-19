@@ -7,14 +7,14 @@ import { Layout } from "./src/components/layout";
 const App = () => {
 
   return (
-    <div>
+  
    <Routes>
    <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           </Route>
    </Routes>
-    </div>
+   
   );
 };
 

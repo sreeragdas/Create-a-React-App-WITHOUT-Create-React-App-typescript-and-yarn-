@@ -74,7 +74,7 @@ export const Sidebar: React.FC = () => {
               <FontAwesomeIcon icon={faGithub} color="#4d4d4d4" />
               </a>
           </li>
-     /
+     
    
 
       </ul>

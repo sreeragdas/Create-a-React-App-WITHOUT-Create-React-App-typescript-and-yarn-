@@ -11,7 +11,7 @@ export const Home: React.FC = () => {
     return(<div className='cointaner home-page'>
         <div className='text-zone'>
             <h1>Hi , <br/> I'm
-            <img src={LogoTitle} alt="develoer" />
+         
             <AnimatedLetters letterClass={letterClass} strArray={nameArray}  idx={15} />
            
             <br />
