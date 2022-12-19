@@ -1,16 +1,14 @@
 import React, { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import './App.scss';
+import { Layout } from "./src/components/layout";
 const App = () => {
-  const [counter, setCounter] = useState(0);
 
-  const increment = () => {
-    setCounter(counter + 1);
-  };
   return (
     <div>
-      This was made from Scratch! Also hello world!
-      <button onClick={increment}>Increment</button>
-      {counter}
+   <Routes>
+     <Route path='/' element={<Layout/>}/>
+   </Routes>
     </div>
   );
 };
