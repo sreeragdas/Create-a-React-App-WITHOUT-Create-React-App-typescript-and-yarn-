@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { Sidebar } from '../sidebar/Sidebar'
-
+import './index.scss'
 export const Layout: React.FC = () => {
   return (
     <div className="App">

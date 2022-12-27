@@ -17,8 +17,8 @@ export const About: React.FC = () => {
   const aboutArray = ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']
   return (
     <>
-   <div className="container about-page">
-        <div className="text-zone">
+   <div className="container.about-page">
+        <div style={{marginLeft:'9%' , marginTop:'10%'}} className="text-zone">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -31,7 +31,7 @@ export const About: React.FC = () => {
             established IT company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
-          <p align="LEFT">
+          <p >
             I'm quiet confident, naturally curious, and perpetually working on
             improving my chops one design problem at a time.
           </p>
