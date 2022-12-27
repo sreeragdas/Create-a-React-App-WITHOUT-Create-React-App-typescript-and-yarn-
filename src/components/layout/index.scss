@@ -99,13 +99,13 @@
   .text-zone {
     position: absolute;
     left: 10%;
-    margin-left: 50%;
-    top: 50%;
+    top:15%;
     transform: translateY(-50%);
     width: 35%;
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
+
   }
 
   .text-animate-hover {
@@ -129,10 +129,8 @@
     &.about-page,
     &.portfolio-page {
       .text-zone {
-        margin-top: 50%;
         position: initial;
         transform: none;
-        margin-left: 50%;
         width: 100%;
         display: block;
         padding: 20px;
