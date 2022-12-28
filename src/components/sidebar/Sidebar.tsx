@@ -14,6 +14,7 @@ import {
     faSuitcase,
     faBars,
     faClose,
+    faDiagramProject,
   } from '@fortawesome/free-solid-svg-icons';
   import LogoS from '../../assets/images/logo-s.png'
   import LogoSubtitle from '../../assets/images/logo_sub.png'
@@ -46,7 +47,8 @@ export const Sidebar: React.FC = () => {
           to="/portfolio"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+         
+          <FontAwesomeIcon icon={faDiagramProject} color="#4d4d4e" />
         </NavLink>
         <NavLink
         

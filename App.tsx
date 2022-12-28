@@ -5,7 +5,7 @@ import { About } from "./src/components/about/About";
 import { Contact } from "./src/components/contact/Contact";
 import { Home } from "./src/components/home/home";
 import { Layout } from "./src/components/layout";
-import { Portfolio } from "./src/components/portfolio/Portfolio";
+import { Projects } from "./src/components/portfolio/Projects";
 const App = () => {
 
   return (
@@ -14,7 +14,7 @@ const App = () => {
    <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="portfolio" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           </Route>
    </Routes>

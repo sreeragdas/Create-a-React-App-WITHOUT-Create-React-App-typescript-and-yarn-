@@ -1,12 +1,14 @@
+import { useState } from "react";
 import { AnimatedLetters } from "../animatedLetters/AnimatedLetters";
 import './index.scss';
 export const Contact: React.FC = () => {
+  
     return(
       <>
       <div className="container contact-page">
           <div className="text-zone">
             <h1>
-                <AnimatedLetters letterClass={""} strArray={['C','o','n','t','a','c','t',' ' ,'M','e']} idx={15} />
+                <AnimatedLetters  letterClass={""} strArray={['C','o','n','t','a','c','t',' ' ,'M','e']} idx={15} />
             </h1>
             <p>
             I'm a very ambitious front-end developer looking for a role in an
