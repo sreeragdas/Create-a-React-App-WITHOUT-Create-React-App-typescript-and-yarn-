@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom'
 import { Sidebar } from '../sidebar/Sidebar'
-
+import './index.scss'
 export const Layout: React.FC = () => {
   return (
     <div className="App">
       <Sidebar />
       <div className="page">
+ 
         <span className="tags top-tags">&lt;body&gt;</span>
 
         <Outlet />

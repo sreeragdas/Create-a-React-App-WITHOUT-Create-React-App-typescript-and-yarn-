@@ -10,7 +10,7 @@ export const AnimatedLetters: React.FC<IData> = ({
   idx,
 }) => {
   return (
-    <span>
+    <span style={{marginLeft:'20px'}}>
     {strArray.map((char, i) => (
       <span key={char + i} className={`${letterClass} _${i + idx}`}>
         {char}
