@@ -2,6 +2,7 @@ import './index.scss'
 import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+
 import { AnimatedLetters } from '../animatedLetters/AnimatedLetters'
 export const Home: React.FC = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -23,6 +24,24 @@ export const Home: React.FC = () => {
     '.',
   ]
 
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch(require('../../assets/resume/Sreerag_Haridas_EM_Resume.pdf')).then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            console.log('blob',fileURL)
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Sreerag_Haridas_EM_Resume.pdf';
+            alink.click();
+        })
+    })
+}
+
+
+
   return (
     <div className="cointaner home-page">
       <div className="text-zone">
@@ -41,13 +60,15 @@ export const Home: React.FC = () => {
           CONTACT ME
         </Link>
         <form method="get" action="fileName">
-        <Link to="/contact" className="flat-button">
+       
+        <Link to="/" className="flat-button" onClick={onButtonClick} >
         RESUME
         </Link>
         </form>
-        <Link to="/projects" className="flat-button">
+        <Link to="/" className="flat-button" >
             PROJECTS
         </Link>
+     
       </div>
     </div>
   )
