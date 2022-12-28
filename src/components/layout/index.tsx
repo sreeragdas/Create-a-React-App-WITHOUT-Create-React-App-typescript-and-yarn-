@@ -4,7 +4,7 @@ import { Sidebar } from '../sidebar/Sidebar'
 export const Layout: React.FC = () => {
   return (
     <div className="App">
-      {/* <Sidebar /> */}
+      <Sidebar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
 
