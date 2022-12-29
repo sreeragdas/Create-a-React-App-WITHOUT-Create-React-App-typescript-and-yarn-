@@ -44,7 +44,7 @@ export const Sidebar: React.FC = () => {
         <NavLink
 
           className="portfolio-link"
-          to="/portfolio"
+          to="/projects"
           onClick={() => setShowNav(false)}
         >
          
