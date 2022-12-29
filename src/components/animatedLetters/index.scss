@@ -19,12 +19,12 @@
     }
   }
   
-  @for $i from 1 through 35 {
-    .text-animate._#{$i} {
-      animation-delay: #{$i / 10}s;
-    }
+  // @for $i from 1 through 35 {
+  //   .text-animate._#{$i} {
+  //     animation-delay: #{$i / 10}s;
+  //   }
 
-    span{
-      font-size: 5rem;
-    }
-  }
+  //   span{
+  //     font-size: 5rem;
+  //   }
+  // }
