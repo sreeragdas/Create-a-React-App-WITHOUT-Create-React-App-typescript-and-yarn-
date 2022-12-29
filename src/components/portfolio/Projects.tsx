@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { AnimatedLetters } from "../animatedLetters/AnimatedLetters";
+import { Corosol } from "../corosol/Corosol";
+
 
 export const Projects: React.FC = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -11,10 +13,12 @@ export const Projects: React.FC = () => {
                   <AnimatedLetters  letterClass={letterClass} strArray={['P','r','o','j','e','c','t','s']} idx={15} />
               </h1>
          
-            <div className="contact-form">
-       
+           <div style={{height:'180px'}}>
+           <Corosol />
+           </div>
+
   
-            </div>
+        
             </div>
   
         </div>
