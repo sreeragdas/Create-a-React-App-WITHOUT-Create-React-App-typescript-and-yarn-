@@ -1,8 +1,20 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { AnimatedLetters } from "../animatedLetters/AnimatedLetters";
 import './index.scss';
+import emailjs from '@emailjs/browser';
 export const Contact: React.FC = () => {
-  
+    const form = useRef();
+    const sendEmail = (e: { preventDefault: () => void; } ) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_8x108ps', 'template_ot866yh', form.current as unknown as string, 'Z7gEXdGxSDZxfwtKf')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          
+      };
     return(
       <>
       <div className="container contact-page">
@@ -16,7 +28,7 @@ export const Contact: React.FC = () => {
             technologies on challenging and diverse projects.
           </p>
           <div className="contact-form">
-              <form>
+          <form  onSubmit={sendEmail} ref={form} >
                   <ul>
                       <li className="half">
                           <input type="text" name="name"  placeholder="Name" required />

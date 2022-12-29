@@ -65,7 +65,7 @@ export const Home: React.FC = () => {
         RESUME
         </Link>
         </form>
-        <Link to="/" className="flat-button" >
+        <Link to="/projects" className="flat-button" >
             PROJECTS
         </Link>
      
