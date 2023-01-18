@@ -28,3 +28,17 @@ jobs:
     - run: yarn ci
     - run: yarn test
     - run: yarn run build --if-present2
+
+    - name: Deploy to GitHub Pages
+
+    - uses: crazy-max/ghaction-github-pages@v2
+
+      with:
+
+        target_branch: gh-pages
+
+        build_dir: build
+
+      env:
+
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
