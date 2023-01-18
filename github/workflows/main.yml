@@ -37,7 +37,7 @@ jobs:
 
         target_branch: gh-pages
 
-        build_dir: build
+        build_dir: dist
 
       env:
 
